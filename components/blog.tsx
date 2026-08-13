@@ -1,0 +1,5 @@
+import Link from "next/link";
+import type { Post } from "../lib/posts";
+export function Header(){return <header className="site-header"><div className="container header-inner"><Link className="logo" href="/">Neural<span>Pulse</span></Link><nav className="nav" aria-label="주 메뉴"><Link href="/">홈</Link><Link href="/posts">아티클</Link><a href="/#topics">토픽</a><a href="#about">소개</a></nav><a className="subscribe" href="#newsletter">구독하기</a></div></header>}
+export function Footer(){return <footer id="about" className="footer"><div className="container footer-inner"><span>© 2026 NeuralPulse. AI를 이해하는 새로운 관점.</span><span>Markdown으로 기록되는 독립 기술 블로그</span></div></footer>}
+export function PostCard({post,index=0}:{post:Post,index?:number}){return <Link className="post-card" href={`/posts/${post.slug}`}><div className="post-thumb"><img src={post.thumbnail} alt=""/></div><div className="post-meta"><span className="tag">0{index+1} / {post.category}</span><span>{post.readingTime}분 읽기</span></div><h3>{post.title}</h3><p>{post.description}</p></Link>}
