@@ -6,7 +6,7 @@ export default function Home() {
   const posts = getPosts();
   const featured = posts[0];
   return <div className="site-shell">
-    <Header />
+    <Header active="home" />
     <main>
       <section className="hero container">
         <div className="hero-copy">
