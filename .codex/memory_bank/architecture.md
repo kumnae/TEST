@@ -15,6 +15,7 @@ NeuralPulse는 로컬 Markdown 파일을 콘텐츠 원본으로 사용하는 한
 
 ```text
 blog-preview/
+├─ index.html                 # 더블클릭으로 여는 독립 실행 안내 페이지
 ├─ app/
 │  ├─ layout.tsx             # 전역 HTML 레이아웃과 SEO 메타데이터
 │  ├─ globals.css            # 사이트 전체 디자인과 반응형 스타일
@@ -129,6 +130,7 @@ npm run test
 - `npm run build`는 Cloudflare Worker 호환 `dist` 결과물을 생성한다.
 - `.openai/hosting.json`의 `project_id`는 기존 Sites 프로젝트를 식별하므로 임의로 변경하거나 제거하지 않는다.
 - 현재 배포 주소: `https://neuralpulse-ai-blog.tiny-trail-5042.chatgpt.site`
+- 프로젝트 루트의 `index.html`은 빌드 도구 없이 직접 열 수 있으며 개발 서버, 배포 사이트 및 GitHub 저장소로 연결한다.
 
 ## 8. 변경 시 주의사항
 
@@ -138,4 +140,3 @@ npm run test
 4. 게시물 데이터 구조가 바뀌면 `Post` 타입, 파서, 카드 및 상세 페이지를 함께 수정한다.
 5. 레이아웃 변경 후 `/`, `/posts`, 대표 상세 페이지를 모두 확인한다.
 6. 배포 전에 `npm run build`를 실행해 빌드 오류가 없는지 확인한다.
-

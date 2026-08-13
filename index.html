@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="NeuralPulse AI 기술 블로그 실행 안내" />
+    <title>NeuralPulse 블로그 열기</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --background: #050505;
+        --panel: #0d0d10;
+        --text: #f7f4fa;
+        --muted: #99929f;
+        --line: #29242e;
+        --violet: #9b4dff;
+        --pink: #dc55ff;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background:
+          radial-gradient(circle at 75% 18%, rgba(139, 61, 255, 0.2), transparent 32%),
+          var(--background);
+        color: var(--text);
+        font-family: Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      }
+
+      main {
+        width: min(720px, 100%);
+        padding: clamp(32px, 7vw, 64px);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: linear-gradient(145deg, rgba(20, 17, 24, 0.96), rgba(8, 8, 10, 0.98));
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.38);
+      }
+
+      .logo {
+        margin: 0 0 48px;
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: -0.04em;
+      }
+
+      .logo span,
+      h1 span {
+        background: linear-gradient(110deg, var(--violet), var(--pink));
+        background-clip: text;
+        color: transparent;
+      }
+
+      .eyebrow {
+        margin: 0 0 16px;
+        color: #b779ff;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(42px, 8vw, 66px);
+        line-height: 1;
+        letter-spacing: -0.065em;
+      }
+
+      .description {
+        max-width: 560px;
+        margin: 25px 0 34px;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.75;
+      }
+
+      .actions {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      a {
+        min-height: 50px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 0 18px;
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        color: var(--text);
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 700;
+        transition: transform 160ms ease, border-color 160ms ease;
+      }
+
+      a:hover { transform: translateY(-2px); border-color: #7541bd; }
+      a.primary { border: 0; background: linear-gradient(110deg, #7d2dff, #b83df2); }
+
+      .note {
+        margin: 24px 0 0;
+        color: #6f6874;
+        font-size: 12px;
+        line-height: 1.65;
+      }
+
+      code { color: #c691ff; }
+
+      @media (max-width: 560px) {
+        .actions { grid-template-columns: 1fr; }
+        .logo { margin-bottom: 36px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="logo">Neural<span>Pulse</span></p>
+      <p class="eyebrow">MARKDOWN AI BLOG</p>
+      <h1>AI의 최전선을<br /><span>탐험하다</span></h1>
+      <p class="description">
+        NeuralPulse는 생성형 AI, 컴퓨터 비전, 머신러닝을 다루는 한국어 기술 블로그입니다.
+        아래 버튼으로 현재 실행 중인 개발 서버나 게시된 블로그를 열 수 있습니다.
+      </p>
+      <div class="actions">
+        <a class="primary" href="https://neuralpulse-ai-blog.tiny-trail-5042.chatgpt.site/">
+          게시된 블로그 열기 <span>↗</span>
+        </a>
+        <a href="http://localhost:3000/">
+          개발 서버 열기 <span>→</span>
+        </a>
+        <a href="https://neuralpulse-ai-blog.tiny-trail-5042.chatgpt.site/posts">
+          전체 포스팅 <span>→</span>
+        </a>
+        <a href="https://github.com/kumnae/TEST">
+          GitHub 저장소 <span>↗</span>
+        </a>
+      </div>
+      <p class="note">
+        개발 서버 버튼은 프로젝트 폴더에서 <code>npm run dev</code>를 실행한 경우에만 열립니다.
+        이 HTML 파일 자체는 별도 설치 없이 더블클릭해 사용할 수 있습니다.
+      </p>
+    </main>
+  </body>
+</html>
