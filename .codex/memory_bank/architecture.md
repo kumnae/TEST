@@ -130,7 +130,7 @@ npm run test
 - `npm run build`는 Cloudflare Worker 호환 `dist` 결과물을 생성한다.
 - `.openai/hosting.json`의 `project_id`는 기존 Sites 프로젝트를 식별하므로 임의로 변경하거나 제거하지 않는다.
 - 현재 배포 주소: `https://neuralpulse-ai-blog.tiny-trail-5042.chatgpt.site`
-- 프로젝트 루트의 `index.html`은 빌드 도구 없이 직접 열 수 있으며 게시된 블로그 주소로 즉시 이동한다. JavaScript가 차단된 환경을 위해 meta refresh와 수동 링크를 함께 제공한다.
+- 프로젝트 루트의 `index.html`은 인증이나 빌드 도구 없이 직접 열 수 있는 독립형 정적 블로그다. 해시 라우팅(`#home`, `#posts`, `#post/{slug}`)으로 홈, 전체 포스팅, 상세 글, 연관 포스팅을 한 파일에서 제공하며 GitHub Pages에서도 그대로 동작한다. Markdown 원본을 변경하면 정적 미리보기의 게시물 데이터도 함께 동기화한다.
 
 ## 8. 변경 시 주의사항
 
