@@ -8,7 +8,7 @@ tags: ["에이전트", "자동화", "협업"]
 thumbnail: "/images/ai-lab.jpg"
 published: true
 featured: false
-relatedPosts: ["generative-ai-next", "small-models"]
+relatedPosts: ["prompt-engineering-guide", "generative-ai-next", "small-models"]
 ---
 
 AI 에이전트는 목표를 받아 여러 단계를 계획하고 도구를 사용해 결과를 만드는 시스템입니다.

@@ -8,7 +8,7 @@ tags: ["LLM", "생성형 AI", "인터페이스"]
 thumbnail: "/images/robot-ai.jpg"
 published: true
 featured: true
-relatedPosts: ["computer-vision-world", "small-models"]
+relatedPosts: ["prompt-engineering-guide", "computer-vision-world", "small-models"]
 ---
 
 기술은 새로운 기능이 등장할 때보다 **사용 방식이 달라질 때** 더 큰 변화를 만듭니다. 생성형 AI는 이제 질문에 답하는 도구를 넘어, 정보와 소프트웨어를 다루는 새로운 인터페이스가 되고 있습니다.
